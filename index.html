@@ -81,7 +81,7 @@ img{ width:100%; max-width:250px; border-radius:10px; }
 let nomorWA="6282326978091";
 let selectedID="";
 let filter="ALL";
-let adminPass="2012";
+let adminPass="3215";
 
 let data=[
   {id:"15224444492",harga:20000,sold:false,rarity:"EPIC"},
@@ -126,7 +126,7 @@ function beli(id){selectedID=id;document.getElementById('popup').style.display='
 function tutup(){document.getElementById('popup').style.display='none';}
 function lanjut(){document.getElementById('popup').style.display='none';document.getElementById('qrpopup').style.display='flex';}
 function tutupQR(){document.getElementById('qrpopup').style.display='none';}
-function kirimWA(){window.open('https://wa.me/'+nomorWA+'?text=Saya+bayar+'+selectedID);}
+function kirimWA(){window.open('https://wa.me/'+nomorWA+'?text=Saya+Sudah+Membayar+'+selectedID);}
 function cs(){window.open('https://wa.me/'+nomorWA);}
 function waChannel(){window.open('https://whatsapp.com/channel/0029VbAJl34F1YlVzBgrPM2E');}
 function openMenu(){document.getElementById('menu').style.display='flex';}
