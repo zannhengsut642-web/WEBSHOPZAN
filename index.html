@@ -2,32 +2,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>ZAN OFFICIAL</title><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"><style>
-#bg-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1; 
-  object-fit: cover;
-  pointer-events: none; /* Biar video gak ganggu klik tombol */
-}
-
-/* Hapus background warna di body lo biar videonya kelihatan */
-body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  background: none !important; /* Buang warna putihnya */
-  background-color: transparent !important;
-  color: white;
+body{
+  margin:0;
+  font-family:'Segoe UI',sans-serif;
+  background:#020617;
+  color:white;
 }#loading{ position:fixed; width:100%;height:100%; background:#020617; display:flex; justify-content:center; align-items:center; z-index:9999; } .loader{ border:4px solid #1e293b; border-top:4px solid #38bdf8; border-radius:50%; width:45px;height:45px; animation:spin 1s linear infinite; } @keyframes spin{100%{transform:rotate(360deg);}}
 
-.hero {
-  height: 200px;
-  background: transparent !important;
-}
+.hero{height:200px;}
 
 header{ position:relative; text-align:center; margin-top:-80px; font-size:20px; font-weight:bold; backdrop-filter:blur(10px); }
 
@@ -35,19 +17,9 @@ header{ position:relative; text-align:center; margin-top:-80px; font-size:20px; 
 
 .tabs{ display:flex; justify-content:center; gap:10px; margin:10px 0; } .tab{ padding:8px 12px; border-radius:10px; border:none; cursor:pointer; font-weight:bold; background:#1e293b; color:white; } .active{ background:linear-gradient(90deg,#38bdf8,#6366f1); }
 
-.container {
-  background: transparent !important;
-}
+.container{padding:15px;}
 
-.card {
-  background: rgba(255, 255, 255, 0.1) !important; /* Transparan 10% */
-  backdrop-filter: blur(8px); /* Efek blur biar pro */
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 15px;
-  padding: 15px;
-  margin-bottom: 15px;
-}
+.card{ background:rgba(255,255,255,0.05); backdrop-filter:blur(12px); border:1px solid rgba(255,255,255,0.1); border-radius:15px; padding:15px; margin-bottom:15px; opacity:0; transform:translateY(30px) scale(0.95); animation:masuk 0.5s ease forwards; } @keyframes masuk{ to{opacity:1;transform:translateY(0) scale(1);} }
 
 .card:hover{ transform:translateY(-5px) scale(1.02); box-shadow:0 0 20px rgba(56,189,248,0.3); }
 
@@ -73,14 +45,7 @@ img{ width:100%; max-width:250px; border-radius:10px; }
 
 .admin-btn{ position:fixed; bottom:90px; right:20px; width:55px;height:55px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:#ef4444; font-size:20px; cursor:pointer; } </style></head>
 
-header, .tabs {
-  background: transparent !important;
-}
-
 <body><div id="loading"><div class="loader"></div></div><div class="hero"><canvas id="blackhole"></canvas></div><header>
-<video autoplay muted loop id="bg-video">
-  <source src="https://raw.githubusercontent.com/zannhengsut642-web/WEBSHOPZAN/main/video.mp4" type="video/mp4">
-</video>
 ✨ SHOP AKUN FF ID UNIK 24 JAM!✨
 <div class="menu-btn" onclick="openMenu()">⋮</div>
 </header><div class="tabs">
